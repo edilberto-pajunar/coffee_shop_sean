@@ -1,6 +1,8 @@
+import 'dart:html';
 import 'dart:ui';
 
 import 'package:coffee_shop_sean/constant/image_string.dart';
+import 'package:coffee_shop_sean/widgets/body.dart';
 import 'package:coffee_shop_sean/widgets/navbar.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +30,7 @@ class Home extends StatelessWidget {
           ),
           child: Container(
             width: double.infinity,
-            padding: EdgeInsets.symmetric(horizontal: 250, vertical: 50),
+            padding: EdgeInsets.symmetric(horizontal: 350, vertical: 50),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
               gradient: LinearGradient(
@@ -48,6 +50,10 @@ class Home extends StatelessWidget {
               child: Column(
                 children: [
                   Navbar(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Body(),
                 ],
               ),
             ),
